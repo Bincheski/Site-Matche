@@ -25,6 +25,12 @@ header {
   height: 110px;
   box-shadow: #333 0px 4px 6px -1px, #333 0px 2px 4px -1px;
 }
+@media (max-width: 768px) {
+  header {
+    height: 25vh;
+    background-position: top center;
+  }
+}
 
 /* corpo principal */
 main {
