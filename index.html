@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <title>Site Matchê</title>
 </head>
 
@@ -11,47 +16,112 @@
 
     <header>
 
-        <h1>Bem-vindo ao Site Matchê</h1>
+    <div class="container">
+       <div class="logo">
+            <img src="./img/mic.png" alt="Logo do Matchê Podcast">
+       </div>
+
+       <div class="title">
+            <img src="./img/letras.png" alt="Letras do Matchê Podcast">
+       </div>
+        
         <nav>
-
-      <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-
+            <div class="dropdown">
+            <button id="menu-button">Menu ☰</button>
+            <ul id="menu-options" class="dropdown-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#elenco">Elenco</a></li>
+                <li><a href="#cortes">Cortes</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            </div>
+        </nav>
+    </div>
     </header>
 
     <main>
 
-        <section>
-            <h2>Noticias</h2>
-            <p>O Site Matchê é uma plataforma desenvolvida para mostrar tudo sobre o nosso podcast para você não perder nada.</p>
+        <section id="home" class="home-section">
+            <h2>Nossa História</h2>
+            <p>O Matchê Podcast nasceu em 2020, em Alvorada/RS, de forma totalmente artesanal e independente. A ideia surgiu da amizade e da vontade de conversar sobre tudo com leveza, humor e autenticidade. Nessa primeira fase, os hosts eram Ryan, Gabe, Jhonny e Hélio, que deram voz ao projeto e criaram a base da nossa comunidade.</p>
+            <p>Com a pandemia, tivemos uma pausa necessária. Mas, em 2023, voltamos com tudo — mais fortes, mais maduros e ainda mais apaixonados pelo que fazemos. Hoje, o Matchê é um verdadeiro projeto coletivo: Ryan segue como host e produtor, com uma equipe que mistura família e amigos que se tornaram parte da família.</p>
         </section>
 
-        <section>
+        <section id="elenco" class="elenco-section">
+            <h2>Elenco</h2>
+            <p>O Site Matchê é uma plataforma desenvolvida para mostrar tudo sobre o nosso podcast, para que você não perca nada.</p>
+            <p></p>
+            <ul>
+                <li><strong>Ryan:</strong> Host e produtor</li>
+                <li><strong>Malu:</strong> Co-host</li>
+                <li><strong>Rafael:</strong> Co-host</li>
+                <li><strong>Marla:</strong> Co-host</li>
+                <li><strong>Gabriel:</strong> Co-host</li>
+                <li><strong>Jhonny:</strong> Co-host</li>
+                <li><strong>Eliza:</strong> Social media</li>
+                <li><strong>Thais:</strong> Produtora</li>
+                <li><strong>Felipe:</strong> Estrela movél</li>
+            </ul>
+            <p>Nosso elenco é composto por pessoas incríveis que trazem conteúdo de qualidade para você. Conheça cada um deles e saiba mais sobre suas histórias e contribuições para o podcast.</p>
+        </section>
+
+        <section id="cortes" class="cortes-section">
             <h2>Cortes</h2>
             <ul>
-                <li>Cortes</li>
-                <li>Noticias</li>
-                <li>Sobre nós</li>
+                <li>Corte 1: Título do Corte</li>
+                <li>Corte 2: Título do Corte</li>
+                <li>Corte 3: Título do Corte</li>
             </ul>
         </section>
 
-        <section>
-            <h2>Participe você também!</h2>
-            <p> entre em Contato conosco para saber mais sobre como participar do nosso podcast.</p>
+        <section id="sobre" class="sobre-section">
+            <h2>Sobre Nós</h2>
+            <h3>O que fazemos</h3>
+            <p>Mais do que um podcast, o Matchê é um projeto da FR Produções que já ganhou as ruas: fazemos cobertura de eventos, torneios e iniciativas culturais, sempre levando nossa identidade 100% original e artesanal.</p>
+            <h3>Nossos objetivos</h3>
+            <p>Nosso objetivo é simples: dar voz à comunidade, celebrar a cultura local e mostrar que, quando a família e os amigos se juntam, coisas grandes podem nascer.</p>
         </section>
+
+        <section id="contato" class="contato-section">
+    <h2>Participe Você Também!</h2>
+    <p>Entre em contato conosco para saber mais sobre como participar do nosso podcast.</p>
+    
+    <form class="contact-form">
+        <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Enviar</button>
+    </form>
+</section>
 
     </main>
 
     <footer>
+  <div class="youtube">
+    <a href="https://www.youtube.com/@Matchepodcast" target="_blank">
+      <img src="./img/icone youtube.png.png" alt="YouTube"> </a>
+  </div>
 
-            <p>esse site tem os direitos reservados &copy; 2025</p>
-            
-    </footer>
+  <div class="instagram">
+    <a href="https://www.instagram.com/matchepdc/" target="_blank">
+      <img src="./img/instagram logo.png" alt="instagram"> </a>
+  </div>
+
+  <div class="footer-text">
+    <p>Este site tem os direitos reservados &copy; 2025</p>
+  </div>
+</footer>
     
+    <script src="script.js"></script>
 </body>
-
 </html>
