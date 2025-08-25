@@ -27,8 +27,11 @@ header {
 }
 @media (max-width: 768px) {
   header {
-    height: 25vh;
+    height: 30vh;
     background-position: top center;
+    display: flex;       
+    justify-content: space-between; 
+    align-items: center; 
   }
 }
 
