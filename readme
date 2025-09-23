@@ -1,0 +1,93 @@
+# Matchê Podcast Website
+
+## Descrição
+Este é o site oficial do **Matchê Podcast**, um projeto independente e artesanal criado em 2020 em Alvorada/RS. O podcast foca em conversas leves, humor e autenticidade, com uma equipe coletiva que inclui hosts, produtores e colaboradores. O site serve como plataforma para apresentar a história do podcast, o elenco, cortes de episódios, informações sobre o projeto e um formulário de contato para engajamento da comunidade.
+
+O design é responsivo, moderno e otimizado para dispositivos móveis, com animações suaves, um menu dropdown e um loader inicial. Ele integra Google Fonts para tipografia personalizada e Google AdSense para monetização.
+
+## Funcionalidades
+- **Seções Principais**:
+  - **Home**: História do podcast, desde sua criação em 2020 até o retorno em 2023.
+  - **Elenco**: Lista dos membros da equipe (Ryan como host/produtor, co-hosts como Malu, Rafael, etc., e papéis como social media e produtora).
+  - **Cortes**: Lista de clipes/episódios destacados (placeholders para títulos de cortes).
+  - **Sobre**: Detalhes sobre o que o projeto faz (cobertura de eventos via FR Produções) e objetivos (dar voz à comunidade local).
+  - **Contato**: link para o whastapp responsavel pelos agendamentos.
+- **Navegação**: Menu hamburger (☰) responsivo com links âncora para seções.
+- **Interatividade**:
+  - Loader com spinner de carregamento.
+  - Animações de fade-in para seções.
+  - Hover effects em imagens e botões.
+  - Botão "Voltar ao Topo" no footer para rolagem suave.
+- **Footer**: Links para YouTube e Instagram, com texto de copyright.
+- **Responsividade**: Adapta-se a telas pequenas (mobile-first), com ajustes no header, menu e formulário.
+
+## Tecnologias Utilizadas
+- **Frontend**:
+  - HTML5: Estrutura semântica com seções.
+  - CSS3: Estilos com Flexbox, Grid (implícito), animações (@keyframes), gradientes, sombras e media queries para responsividade.
+  - JavaScript (Vanilla): Controle do menu dropdown, loader, clique fora do menu e botão back-to-top.
+- **Bibliotecas Externas**:
+  - Google Fonts: 'Lora' (corpo), 'Pacifico' (títulos), 'Montserrat' (geral).
+  - Google AdSense: Script para anúncios (ID: ca-pub-00000000000).
+- **Imagens**: Pasta `./img/` com assets como logo (mic.png, letras.png), fundo do header (fundo-celular.png) e ícones sociais (icone youtube.png.png, instagram logo.png).
+- **Outros**: Sem dependências de frameworks (puro vanilla para leveza).
+
+## Estrutura do Projeto
+
+- **Observações sobre Imagens**:
+  - Certifique-se de que a pasta `img` esteja na raiz do projeto.
+  - Nomes de arquivos sensíveis a maiúsculas/minúsculas e espaços (ex: renomeie "instagram logo.png" para "instagram-icon.png" para evitar erros).
+  - Se imagens não carregarem, verifique paths no console do navegador (F12 > Network).
+
+## Como Executar
+1. **Requisitos**:
+   - Navegador moderno (Chrome, Firefox, Safari).
+   - Editor de texto (VS Code recomendado).
+   - Sem servidor necessário (site estático), mas para testar AdSense, use um servidor local.
+
+2. **Instalação Local**:
+   - Clone ou baixe os arquivos para uma pasta (ex: `projeto-matchê`).
+   - Abra `index.html` diretamente no navegador (duplo-clique ou arraste para o browser).
+   - Para desenvolvimento: Use Live Server no VS Code ou Python (`python -m http.server 8000` na pasta raiz, acesse `http://localhost:8000`).
+
+3. **Hospedagem**:
+   - **Utilizada** Netlify 
+   - **AdSense**: Ative no Google AdSense após hospedar (o script já está no `<head>`).
+
+4. **Teste Responsivo**:
+   - Redimensione a janela do navegador ou use DevTools (F12 > Toggle Device Toolbar) para simular mobile.
+
+## Configurações e Personalizações
+- **Links Sociais** (Footer):
+  - YouTube: `https://www.youtube.com/@Matchepodcast` – Atualize se necessário.
+  - Instagram: `https://www.instagram.com/matchepdc/` – Atualize se necessário.
+- **AdSense**:
+  - Verifique o client ID (`ca-pub-3269712387065143`) no Google AdSense. Substitua se for outro.
+- **Imagens e Paths**:
+  - Adicione mais imagens na pasta `img/` (ex: para elenco ou cortes).
+  - Para ícones sociais: Baixe PNGs oficiais e corrija nomes/extensões para evitar erros 404.
+- **Cores e Temas**:
+  - Fundo: Gradiente branco-cinza (ajuste em `body` no CSS).
+  - Títulos: Preto com underline (modifique `h2::after`).
+  - Menu: Fundo cinza escuro (altere `#333` e `#444` no CSS).
+- **Número de Telefone/Contato whatsapp**:
+  - O link como `<a href="https://wa.me/SEU_NUMERO">Fale no WhatsApp</a>` (adicione CSS para estilizar).
+- **Ano no Copyright**: Mude `2025` no footer para o ano atual.
+
+## Problemas Comuns e Soluções
+- **Imagens Não Carregam**: Verifique paths (ex: `./img/icone youtube.png.png` tem extensão dupla – renomeie para `youtube-icon.png`). Limpe cache (Ctrl + Shift + R).
+- **Menu Não Funciona**: Certifique-se de que `script.js` está carregado no final do HTML.
+- **Responsividade Quebra**: Teste em diferentes tamanhos; ajuste media queries em `@media (max-width: 768px)`.
+- **AdSense Não Aparece**: Aprovação pendente no Google; teste em produção.
+
+## Contribuições
+- Este site foi desenvolvido com base em um template inicial e otimizações manuais.
+- Para contribuir: Fork o repositório (se em GitHub), faça pull requests com melhorias (ex: adicionar backend ao form ou mais seções).
+- Contato: Use o formulário no site ou redes sociais listadas.
+
+## Licença
+© 2025 Matchê Podcast. Todos os direitos reservados. Feito pela FR Produções. Uso não comercial; para modificações, entre em contato via site.
+
+---
+
+*Última atualização: Baseado no código fornecido em [23/09/2025]. Para versões atualizadas ou suporte, acesse o repositório ou contate a equipe.*

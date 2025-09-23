@@ -205,6 +205,31 @@ footer {
   cursor: pointer; /* Indica que é clicável */;
 }
 
+/* Botão Back to Top (Opcional) */
+.footer-actions {
+    display: flex;
+    align-items: center;
+}
+
+.btn-back-top {
+    background-color: #4CAF50; /* Verde acento */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px; /* Arredondado */
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(76, 175, 80, 0.3);
+}
+
+.btn-back-top:hover {
+    background-color: #45a049;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.4);
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -367,4 +392,66 @@ h2::after {
 
 @keyframes spin {
   to { transform: rotate(360deg); }
+}
+
+/* Botão WhatsApp com Imagem */
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366; /* Verde oficial do WhatsApp */
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 50px; /* Bordas arredondadas para visual moderno */
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3); /* Sombra verde sutil */
+    transition: all 0.3s ease;
+    margin: 20px 0;
+    min-width: 250px; /* Largura mínima para mobile */
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E; /* Verde mais escuro no hover */
+    transform: translateY(-2px); /* Eleva levemente no hover */
+    box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
+.whatsapp-icon {
+    width: 38px; /* Tamanho do ícone (ajuste se necessário) */
+    height: 38px;
+    margin-right: 10px; /* Espaço entre ícone e texto */
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-btn:hover .whatsapp-icon {
+    transform: scale(1.1); /* Ícone cresce levemente no hover */
+}
+
+/* Responsivo para Mobile */
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        width: 100%;
+        max-width: 300px;
+        flex-direction: column; /* Em telas pequenas, ícone em cima do texto */
+        text-align: center;
+    }
+    
+    .whatsapp-icon {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
+
+/* Nota do WhatsApp (estilo existente, mas otimizado) */
+.whatsapp-note {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
 }
