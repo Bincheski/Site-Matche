@@ -27,3 +27,15 @@ window.addEventListener("load", function () {
   const loader = document.getElementById("loader");
   loader.style.display = "none";
 });
+
+// Botão Back to Top (Opcional)
+const backToTopBtn = document.getElementById("back-to-top");
+if (backToTopBtn) {
+        backToTopBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" // Rolagem suave
+            });
+        });
+    }

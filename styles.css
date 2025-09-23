@@ -205,6 +205,31 @@ footer {
   cursor: pointer; /* Indica que é clicável */;
 }
 
+/* Botão Back to Top (Opcional) */
+.footer-actions {
+    display: flex;
+    align-items: center;
+}
+
+.btn-back-top {
+    background-color: #4CAF50; /* Verde acento */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px; /* Arredondado */
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(76, 175, 80, 0.3);
+}
+
+.btn-back-top:hover {
+    background-color: #45a049;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.4);
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
